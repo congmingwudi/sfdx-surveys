@@ -1,0 +1,12 @@
+<p>Dear {!Contact.FirstName}, </p>
+
+<p>Your Case # {!Case.CaseNumber} has been closed.</p>
+
+<p>We appreciate your feedback. Please complete this 
+<a href="{!Case.SurveyInvitationLink__c}">short survey</a>.<p>
+
+<p>Thank you</p>
+
+University of Phoenix<br>
+4035 S Riverpoint Pkwy, Phoenix, AZ 85040<br>
+(844) 937-8679

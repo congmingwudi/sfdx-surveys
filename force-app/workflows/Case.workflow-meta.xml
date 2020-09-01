@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Student_Case_Close_Survey_Email</fullName>
+        <ccEmails>ryan.cox@salesforce.com</ccEmails>
+        <description>Student Case Close Survey Email</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactId</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Public/Student_Case_Closed_Survey_Email</template>
+    </alerts>
+</Workflow>

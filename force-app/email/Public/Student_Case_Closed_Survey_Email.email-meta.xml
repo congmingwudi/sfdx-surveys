@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>sends student survey link when a case is closed</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Student Case Closed Survey Email</name>
+    <style>none</style>
+    <subject>Student Case Closed (Case # {!Case.CaseNumber})</subject>
+    <textOnly>Dear {!Contact.FirstName},
+
+Your Case # {!Case.CaseNumber} has been closed.
+
+We appreciate your feedback. Please complete this short survey.
+
+{!Case.SurveyInvitationLink__c}
+
+Thank you
+
+University of Phoenix
+4035 S Riverpoint Pkwy, Phoenix, AZ 85040
+(844) 937-8679</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,24 @@
+minimum_cumulusci_version: '3.16.0'
+project:
+    name: sfdx-surveys
+    package:
+        name: sfdx-surveys
+        api_version: '49.0'
+    git:
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/sfdx-surveys/tests
+            options:
+                outputdir: robot/sfdx-surveys/results
+
+    robot_testdoc:
+        options:
+            path: robot/sfdx-surveys/tests
+            output: robot/sfdx-surveys/doc/sfdx-surveys_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
